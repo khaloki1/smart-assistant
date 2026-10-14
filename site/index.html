@@ -233,82 +233,170 @@
   </div>
 </section>
 
-<!-- ══ 06 Outcomes ══════════════════════════════════════════════
-     What the platform changes, framed as outcomes rather than guarantees.
-     No percentage or figure is claimed, because none has been measured. -->
+<!-- ══ 06 Outcomes — tabbed feature showcase ═══════════════════
+     Four outcomes, each with its own illustrative animated panel, behind
+     CSS-only radio tabs (no JavaScript, so it stays inside script-src
+     'self'). Every panel is aria-hidden — it is a depiction — while the
+     heading and bullets carry the meaning. Copy is the client's own
+     outcome wording; no figure or guarantee is claimed. -->
 <section class="section" id="outcomes">
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">OUTCOMES</p>
-      <h2>قلّل التكلفة، ووسّع نطاق خدمتك، وانطلق خلال أيام</h2>
+      <h2>مزايا تُحدث الفرق في عملك</h2>
       <hr class="stroke sm">
       <p class="lede">مسار لا يضيف أداة جديدة فحسب، بل يغيّر معادلة التكلفة والوقت في التواصل مع عملائك.</p>
     </div>
-    <div class="grid grid-2">
-      <div class="pillar">
-        <span class="tagline">Lower Cost</span>
-        <h3>اخفض تكلفة خدمة العملاء</h3>
-        <p>ردّ فوري على مدار الساعة بلهجة العميل، مع تحويل المكالمة إلى موظف بشري بسياق كامل عند الحاجة فقط.</p>
-      </div>
-      <div class="pillar">
-        <span class="tagline">More Revenue</span>
-        <h3>ارفع إيرادك ومعدّل التحصيل</h3>
-        <p>تواصل صادر تلقائي مع العملاء المحتملين، وتذكير بالمستحقات والمتابعة، مع تسجيل كل نتيجة في سجلاتك.</p>
-      </div>
-      <div class="pillar">
-        <span class="tagline">Structured Data</span>
-        <h3>حوّل المكالمات إلى بيانات منظَّمة</h3>
-        <p>كل مكالمة تُحفظ بنصها وملخّصها ونتيجتها، فتصبح معلومات قابلة للقياس والمراجعة بدل مجهود ضائع.</p>
-      </div>
-      <div class="pillar">
-        <span class="tagline">Custom Automation</span>
-        <h3>أتمتة مصمَّمة حول عملك</h3>
-        <p>وكلاء ومسارات عمل مبنية على إجراءاتك أنت، مصمَّمة للاتصال بأنظمتك الحالية عبر واجهات برمجية موثّقة.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ══ 06b In action ════════════════════════════════════════════
-     An animated, illustrative panel showing the outcome named just above:
-     scattered inbound conversations becoming one structured record. The
-     visual is aria-hidden (it is a depiction); the heading and lede carry
-     the meaning for every reader. Motion is pure CSS. -->
-<section class="section" id="showcase">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">IN ACTION</p>
-      <h2>من محادثة إلى بيانات منظَّمة</h2>
-      <hr class="stroke sm">
-      <p class="lede">كل مكالمة ومحادثة تتحوّل تلقائيًا إلى سجل واضح — باسم العميل وطلبه ونتيجته — جاهز للقياس والمتابعة.</p>
-    </div>
+    <div class="ftabs">
+      <input type="radio" name="ft" id="ft-1" class="ftab-radio" checked>
+      <input type="radio" name="ft" id="ft-2" class="ftab-radio">
+      <input type="radio" name="ft" id="ft-3" class="ftab-radio">
+      <input type="radio" name="ft" id="ft-4" class="ftab-radio">
 
-    <div class="m-panel showcase-panel" aria-hidden="true">
-      <div class="src-list">
-        <div class="src-chip"><span class="dot"></span> مكالمة صوتية</div>
-        <div class="src-chip"><span class="dot"></span> محادثة واتساب</div>
-        <div class="src-chip"><span class="dot"></span> محادثة الموقع</div>
+      <div class="ftablist" role="tablist" aria-label="مزايا المنصة">
+        <label class="ftab" for="ft-1">خفض تكاليف الدعم</label>
+        <label class="ftab" for="ft-2">زيادة الإيراد والتحصيل</label>
+        <label class="ftab" for="ft-3">بيانات منظَّمة</label>
+        <label class="ftab" for="ft-4">أتمتة وتكامل</label>
       </div>
 
-      <div class="flow-node">
-        <span class="flow-core">
-          <svg viewBox="0 0 239.65 76.01" role="img" aria-label="مسار"><use href="#m-mark"/></svg>
-        </span>
-        <span>مسار</span>
-      </div>
+      <div class="fpanes">
 
-      <div class="record">
-        <div class="record-head">سجل العميل</div>
-        <div class="record-row"><span>اسم العميل</span>
-          <span class="record-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4 10-11"/></svg></span></div>
-        <div class="record-row"><span>نوع الطلب</span>
-          <span class="record-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4 10-11"/></svg></span></div>
-        <div class="record-row"><span>ملخّص المكالمة</span>
-          <span class="record-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4 10-11"/></svg></span></div>
-        <div class="record-row"><span>النتيجة</span>
-          <span class="record-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4 10-11"/></svg></span></div>
-        <div class="record-row"><span>المتابعة</span>
-          <span class="record-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4 10-11"/></svg></span></div>
+        <!-- Tab 1 — lower support cost -->
+        <div class="fpane" id="fp-1">
+          <div class="fpane-copy">
+            <h3>اخفض تكلفة خدمة العملاء</h3>
+            <p class="lede">ردّ فوري على مدار الساعة بلهجة العميل، مع تحويل المكالمة إلى موظف بشري بسياق كامل عند الحاجة فقط.</p>
+            <ul class="feat-list">
+              <li>يرد على المكالمات الواردة فورًا، حتى خارج أوقات الدوام.</li>
+              <li>يفهم اللهجة السعودية ويعرف بيانات شركتك وخدماتها.</li>
+              <li>يحوّل المكالمة إلى الموظف المختص بكامل السياق عند الحاجة.</li>
+            </ul>
+          </div>
+          <div class="m-panel call-card" aria-hidden="true">
+            <div class="call-top">
+              <span class="call-live"><i></i> مكالمة واردة · رد خلال ثوانٍ</span>
+              <span class="call-brand">مسار</span>
+            </div>
+            <div class="voice-pill">
+              <span class="voice-avatar"></span>
+              <span class="voice-meta">
+                <b>مساعد مسار</b>
+                <small>على مدار الساعة · لهجة سعودية</small>
+              </span>
+              <span class="waveform"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <div class="call-chat">
+              <div class="bubble bubble-cust">عندي استفسار عن فاتورتي، ممكن أحد يساعدني؟</div>
+              <div class="bubble bubble-ai bubble-rise">أكيد، أنا موجود على مدار الساعة. عطني رقم الفاتورة وأفيدك حالًا.</div>
+              <div class="handoff"><span class="dot"></span> يُحوّل لموظف بشري عند الحاجة</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2 — more revenue / collections -->
+        <div class="fpane" id="fp-2">
+          <div class="fpane-copy">
+            <h3>ارفع إيرادك ومعدّل التحصيل</h3>
+            <p class="lede">تواصل صادر تلقائي مع العملاء المحتملين، وتذكير بالمستحقات والمتابعة، مع تسجيل كل نتيجة في سجلاتك.</p>
+            <ul class="feat-list">
+              <li>يتواصل مع العملاء المحتملين ويؤهّلهم تلقائيًا.</li>
+              <li>يذكّر بالمستحقات ويتابع السداد باحترام ومواظبة.</li>
+              <li>يسجّل نتيجة كل محاولة تواصل في سجلاتك.</li>
+            </ul>
+          </div>
+          <div class="m-panel lead-panel" aria-hidden="true">
+            <div class="lead-row lead-active">
+              <span class="lead-av"></span>
+              <span class="lead-who"><b>فهد الدوسري</b><small>عميل محتمل · تأهيل</small></span>
+              <span class="lead-status"><span class="mini-wave"><i></i><i></i><i></i><i></i></span></span>
+            </div>
+            <div class="lead-row lead-wa">
+              <span class="lead-av"></span>
+              <span class="lead-who"><b>نورة القحطاني</b><small>تذكير مستحق</small></span>
+              <span class="lead-status"><span class="lead-badge">تذكير واتساب</span></span>
+            </div>
+            <div class="lead-row lead-done">
+              <span class="lead-av"></span>
+              <span class="lead-who"><b>سعد العتيبي</b><small>متابعة طلب</small></span>
+              <span class="lead-status"><span class="lead-badge">تم التواصل ✓</span></span>
+            </div>
+            <div class="lead-row lead-done">
+              <span class="lead-av"></span>
+              <span class="lead-who"><b>منيرة الشهري</b><small>عميل محتمل · مؤهَّل</small></span>
+              <span class="lead-status"><span class="lead-badge">تم التواصل ✓</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3 — structured data -->
+        <div class="fpane" id="fp-3">
+          <div class="fpane-copy">
+            <h3>حوّل المكالمات إلى بيانات منظَّمة</h3>
+            <p class="lede">كل مكالمة ومحادثة تتحوّل تلقائيًا إلى سجل واضح — باسمه وطلبه ونتيجته — جاهز للقياس والمراجعة.</p>
+            <ul class="feat-list">
+              <li>يحفظ نص كل مكالمة وملخّصها ونتيجتها.</li>
+              <li>يوحّد المكالمات والواتساب ومحادثات الموقع في سجل واحد.</li>
+              <li>معلومات قابلة للقياس والمراجعة بدل مجهود ضائع.</li>
+            </ul>
+          </div>
+          <div class="m-panel showcase-panel" aria-hidden="true">
+            <div class="src-list">
+              <div class="src-chip"><span class="dot"></span> مكالمة صوتية</div>
+              <div class="src-chip"><span class="dot"></span> محادثة واتساب</div>
+              <div class="src-chip"><span class="dot"></span> محادثة الموقع</div>
+            </div>
+            <div class="flow-node">
+              <span class="flow-core">
+                <svg viewBox="0 0 239.65 76.01" role="img" aria-label="مسار"><use href="#m-mark"/></svg>
+              </span>
+              <span>مسار</span>
+            </div>
+            <div class="record">
+              <div class="record-head">سجل العميل</div>
+              <div class="record-row"><span>اسم العميل</span>
+                <span class="record-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4 10-11"/></svg></span></div>
+              <div class="record-row"><span>نوع الطلب</span>
+                <span class="record-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4 10-11"/></svg></span></div>
+              <div class="record-row"><span>ملخّص المكالمة</span>
+                <span class="record-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4 10-11"/></svg></span></div>
+              <div class="record-row"><span>النتيجة</span>
+                <span class="record-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4 10-11"/></svg></span></div>
+              <div class="record-row"><span>المتابعة</span>
+                <span class="record-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4 10-11"/></svg></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4 — automation & integrations -->
+        <div class="fpane" id="fp-4">
+          <div class="fpane-copy">
+            <h3>أتمتة مصمَّمة حول عملك</h3>
+            <p class="lede">وكلاء ومسارات عمل مبنية على إجراءاتك أنت، مصمَّمة للاتصال بأنظمتك الحالية عبر واجهات برمجية موثّقة.</p>
+            <ul class="feat-list">
+              <li>يربط أنظمتك الحالية دون استبدالها.</li>
+              <li>ينقل المهام تلقائيًا من خطوة إلى أخرى.</li>
+              <li>يزامن البيانات مع أنظمتك أولًا بأول.</li>
+            </ul>
+          </div>
+          <div class="m-panel hub-panel" aria-hidden="true">
+            <div class="hub-chips">
+              <div class="hub-chip"><span class="dot"></span> إدارة العملاء</div>
+              <div class="hub-chip"><span class="dot"></span> تخطيط الموارد</div>
+              <div class="hub-chip"><span class="dot"></span> مركز الاتصال</div>
+              <div class="hub-chip"><span class="dot"></span> واتساب</div>
+            </div>
+            <div class="hub-flow"><i></i><i></i><i></i></div>
+            <div class="hub-core2">
+              <span class="flow-core">
+                <svg viewBox="0 0 239.65 76.01" role="img" aria-label="مسار"><use href="#m-mark"/></svg>
+              </span>
+              <span>يربط ويزامن تلقائيًا</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
